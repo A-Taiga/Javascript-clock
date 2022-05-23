@@ -112,8 +112,8 @@ async function draw() {
 
     
     sHand.style.transform = `rotate(${Math.PI/30 * seconds}rad)`; 
-    mHand.style.transform = `rotate(${Math.PI/30 * minutes+.01}rad)`;
-    hHand.style.transform = `rotate(${Math.PI/30 * (hours)*5}rad)`;
+    mHand.style.transform = `rotate(${Math.PI/30 * minutes-.006}rad)`;
+    hHand.style.transform = `rotate(${Math.PI/30 * (hours)*5-.01}rad)`;
     
     clock.appendChild(mHand);
     clock.appendChild(sHand);
