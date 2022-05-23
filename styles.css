@@ -1,0 +1,43 @@
+
+#parentClock {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10vh auto;
+}
+/*
+.ruler.v {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    outline: 1px solid black;
+
+
+
+}
+.ruler.h {
+    position: absolute;
+    height: 100%;
+    outline: 1px solid black;
+}
+*/
+.clockFace {
+    
+    width: 300px;
+    height: 300px;
+    outline: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.centerFace {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+}
