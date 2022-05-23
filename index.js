@@ -111,9 +111,9 @@ async function draw() {
     //console.log(minutes);
 
     
-    sHand.style.transform = `rotate(${Math.PI/30 * seconds*57.3}deg)`; //57.3 is magic number  
-    mHand.style.transform = `rotate(${Math.PI/30 * minutes*57.3}deg)`; 
-    hHand.style.transform = `rotate(${Math.PI/30 * (hours*57.3)*5}deg)`;
+    sHand.style.transform = `rotate(${Math.PI/30 * seconds}rad)`; 
+    mHand.style.transform = `rotate(${Math.PI/30 * minutes+.01}rad)`;
+    hHand.style.transform = `rotate(${Math.PI/30 * (hours)*5}rad)`;
     
     clock.appendChild(mHand);
     clock.appendChild(sHand);
