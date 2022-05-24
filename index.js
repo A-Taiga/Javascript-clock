@@ -68,7 +68,7 @@ var secondHand = () => {
 var minuteHand = () => {
     let el = document.createElement('div');
     el.id = 'minutes';
-    el.style.width = '2px';
+    el.style.width = '5px';
     el.style.height = '160px';
     el.style.backgroundColor = 'black';
     el.style.position = 'absolute';
@@ -79,7 +79,7 @@ var minuteHand = () => {
 var hourHand = () => {
     let el = document.createElement('div');
     el.id = 'hours';
-    el.style.width = '2px';
+    el.style.width = '5px';
     el.style.height = '100px';
     el.style.backgroundColor = 'black';
     el.style.position = 'absolute';
