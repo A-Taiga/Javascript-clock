@@ -14,7 +14,6 @@ var numsContainer = (rotation) => {
     let el = document.createElement('div');
     el.style.width = '30px';
     el.style.height = '20px';
-
     el.style.position = 'absolute';
     el.style.transformOrigin= 'center 180px';
     el.style.transform = `translate(0px, -170px) rotate(${rotation}deg)`;
@@ -61,31 +60,31 @@ var secondHand = () => {
     el.style.width = '2px';
     el.style.height = '160px';
     el.style.backgroundColor = 'red';
-    el.style.position = 'relative';
-    el.style.bottom = '80px'
+    el.style.position = 'absolute';
+    el.style.bottom = '153px'
     el.style.transformOrigin = "bottom center";
     return el;
 }
 var minuteHand = () => {
     let el = document.createElement('div');
     el.id = 'minutes';
-    el.style.width = '5px';
+    el.style.width = '2px';
     el.style.height = '160px';
     el.style.backgroundColor = 'black';
     el.style.position = 'absolute';
-    el.style.bottom = '150px'
+    el.style.bottom = '153px'
     el.style.transformOrigin = "bottom center";
     return el;
 }
 var hourHand = () => {
     let el = document.createElement('div');
     el.id = 'hours';
-    el.style.width = '5px';
-    el.style.height = '110px';
+    el.style.width = '2px';
+    el.style.height = '100px';
     el.style.backgroundColor = 'black';
     el.style.position = 'absolute';
-    el.style.bottom = '150px';
-    el.style.transformOrigin = 'bottom center';
+    el.style.bottom = '153px'
+    el.style.transformOrigin = "bottom center";
     return el;
 }
 
@@ -112,8 +111,8 @@ async function draw() {
 
     
     sHand.style.transform = `rotate(${Math.PI/30 * seconds}rad)`; 
-    mHand.style.transform = `rotate(${Math.PI/30 * minutes-.006}rad)`;
-    hHand.style.transform = `rotate(${Math.PI/30 * (hours)*5-.01}rad)`;
+    mHand.style.transform = `rotate(${Math.PI/30 * minutes}rad)`;
+    hHand.style.transform = `rotate(${Math.PI/30 * hours * 5}rad)`;
     
     clock.appendChild(mHand);
     clock.appendChild(sHand);
