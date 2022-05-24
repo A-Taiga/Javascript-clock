@@ -63,6 +63,7 @@ var secondHand = () => {
     el.style.position = 'absolute';
     el.style.bottom = '153px'
     el.style.transformOrigin = "bottom center";
+    el.style.zIndex = '1';
     return el;
 }
 var minuteHand = () => {
